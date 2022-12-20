@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-  //Scroll animation  
-  AOS.init({});
+  //Scroll 
+  window.scrollTo(0, 10);
+  $('.scroll-graphic').scrollSwap();
 
   //Scrollbar
   $(".scrollbar").mCustomScrollbar();
-  $(".modal .modal-body").mCustomScrollbar();
+  $(".modal-text .modal-body").mCustomScrollbar();
 
   //Toogle
   $('.faq h2').click(function(){
@@ -61,5 +62,6 @@ $(document).ready(function() {
       },
     ],
   });
+
 });
 
